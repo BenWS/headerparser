@@ -8,8 +8,7 @@ app.get("/whoami", (req, res) => {
     var myURL = url.parse(req.url, true);
     var myPath = myURL.pathname;
     
-    var results = req.headers; 
-    console.log(results);
+    var results = req.headers;
     
     var opSystem = results['user-agent'].slice(results['user-agent'].indexOf("(") + 1, results['user-agent'].indexOf(")"));
     var language = results['accept-language'].split(",")[0];
