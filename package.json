@@ -1,0 +1,20 @@
+{
+  "name": "headerparser",
+  "version": "1.0.0",
+  "description": "Retrieves data from request headers and outputs in JSON array",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenWS/headerparser.git"
+  },
+  "author": "Ben Shippey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenWS/headerparser/issues"
+  },
+  "homepage": "https://github.com/BenWS/headerparser#readme"
+}
