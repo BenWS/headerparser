@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BenWS/headerparser/issues"
   },
-  "homepage": "https://github.com/BenWS/headerparser#readme"
+  "homepage": "https://github.com/BenWS/headerparser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

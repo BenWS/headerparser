@@ -22,4 +22,4 @@ app.get("/*", (req, res) => {
     res.end("404!");
 })
 
-app.listen(8080);
+app.listen(process.env.PORT);
