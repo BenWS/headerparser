@@ -3,6 +3,15 @@ var http = require("http");
 var url = require('url');
 var app = express();
 
+//set view directory
+app.set("views", "./views");
+app.set("view engine", "pug");
+
+app.get("/index", function(req,res) {
+    res.render("index");
+});
+
+
 app.get("/whoami", (req, res) => {
 
     var myURL = url.parse(req.url, true);
@@ -18,8 +27,8 @@ app.get("/whoami", (req, res) => {
     res.end();
 })
 
-app.get("/*", (req, res) => {
-    res.end("404!");
-})
+app.get("/*", function(req,res) {
+  res.redirect("/index");
+});
 
 app.listen(process.env.PORT);
